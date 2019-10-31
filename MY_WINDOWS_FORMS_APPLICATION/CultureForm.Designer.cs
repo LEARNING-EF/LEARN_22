@@ -22,41 +22,44 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.buttonPersian = new System.Windows.Forms.Button();
-			this.buttonEnglish = new System.Windows.Forms.Button();
+			this.persianButton = new System.Windows.Forms.Button();
+			this.englishButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// buttonPersian
+			// persianButton
 			// 
-			this.buttonPersian.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-			| System.Windows.Forms.AnchorStyles.Right)));
-			this.buttonPersian.Location = new System.Drawing.Point(12, 12);
-			this.buttonPersian.Name = "buttonPersian";
-			this.buttonPersian.Size = new System.Drawing.Size(178, 23);
-			this.buttonPersian.TabIndex = 0;
-			this.buttonPersian.Text = "فارسی";
-			this.buttonPersian.UseVisualStyleBackColor = true;
-			this.buttonPersian.Click += new System.EventHandler(this.buttonPersian_Click);
+			this.persianButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.persianButton.Location = new System.Drawing.Point(18, 18);
+			this.persianButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.persianButton.Name = "persianButton";
+			this.persianButton.Size = new System.Drawing.Size(267, 35);
+			this.persianButton.TabIndex = 0;
+			this.persianButton.Text = "فارسی";
+			this.persianButton.UseVisualStyleBackColor = true;
+			this.persianButton.Click += new System.EventHandler(this.PersianButton_Click);
 			// 
-			// buttonEnglish
+			// englishButton
 			// 
-			this.buttonEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-			| System.Windows.Forms.AnchorStyles.Right)));
-			this.buttonEnglish.Location = new System.Drawing.Point(12, 41);
-			this.buttonEnglish.Name = "buttonEnglish";
-			this.buttonEnglish.Size = new System.Drawing.Size(178, 23);
-			this.buttonEnglish.TabIndex = 1;
-			this.buttonEnglish.Text = "English";
-			this.buttonEnglish.UseVisualStyleBackColor = true;
-			this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
+			this.englishButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.englishButton.Location = new System.Drawing.Point(18, 63);
+			this.englishButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.englishButton.Name = "englishButton";
+			this.englishButton.Size = new System.Drawing.Size(267, 35);
+			this.englishButton.TabIndex = 1;
+			this.englishButton.Text = "English";
+			this.englishButton.UseVisualStyleBackColor = true;
+			this.englishButton.Click += new System.EventHandler(this.EnglishButton_Click);
 			// 
 			// CultureForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(202, 75);
-			this.Controls.Add(this.buttonEnglish);
-			this.Controls.Add(this.buttonPersian);
+			this.ClientSize = new System.Drawing.Size(303, 115);
+			this.Controls.Add(this.englishButton);
+			this.Controls.Add(this.persianButton);
+			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "CultureForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.ResumeLayout(false);
@@ -65,7 +68,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button buttonPersian;
-		private System.Windows.Forms.Button buttonEnglish;
+		private System.Windows.Forms.Button persianButton;
+		private System.Windows.Forms.Button englishButton;
 	}
 }

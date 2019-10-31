@@ -7,10 +7,10 @@
 			InitializeComponent();
 		}
 
-		private void buttonPersian_Click(object sender, System.EventArgs e)
+		private void PersianButton_Click(object sender, System.EventArgs e)
 		{
 			System.Globalization.CultureInfo cultureInfo =
-				new System.Globalization.CultureInfo("fa-IR");
+				new System.Globalization.CultureInfo(name: "fa-IR");
 
 			System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
 			System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo;
@@ -21,10 +21,10 @@
 			mainForm.Show();
 		}
 
-		private void buttonEnglish_Click(object sender, System.EventArgs e)
+		private void EnglishButton_Click(object sender, System.EventArgs e)
 		{
 			System.Globalization.CultureInfo cultureInfo =
-				new System.Globalization.CultureInfo("en-US");
+				new System.Globalization.CultureInfo(name: "en-US");
 
 			System.Threading.Thread.CurrentThread.CurrentCulture = cultureInfo;
 			System.Threading.Thread.CurrentThread.CurrentUICulture = cultureInfo;
